@@ -27,7 +27,7 @@ zuul:
     maxSemaphores: 2000
   routes:
     api-a:
-      path: /u-app/**
+      path: /yq-app/**
       serviceId: yq-app
       
 ribbon:
