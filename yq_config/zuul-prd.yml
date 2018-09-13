@@ -28,7 +28,7 @@ zuul:
   routes:
     api-a:
       path: /u-app/**
-      serviceId: uusmart-app
+      serviceId: yq-app
       
 ribbon:
     ReadTimeout: 60000
