@@ -1,0 +1,20 @@
+server:
+  port: 9001
+
+spring:
+  application:
+    name: eureka
+
+eureka:
+  instance:
+    lease-renewal-interval-in-seconds: 10
+    lease-expiration-duration-in-seconds: 30
+    prefer-ip-address: true
+    instance-id:  ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+
+  server:
+    enable-self-preservation: false
+    eviction-interval-timer-in-ms: 5000
