@@ -1,0 +1,4 @@
+diy:
+  redis:
+    prefix:
+      appssid: yq:wl
