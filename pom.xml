@@ -13,6 +13,9 @@
     <modules>
         <module>config</module>
         <module>eureka</module>
+        <module>zuul</module>
+        <module>yq-app</module>
+        <!--<module>yq-core</module>-->
     </modules>
 
     <properties>
@@ -47,6 +50,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-jetty</artifactId>
         </dependency>
+
 
 
         <dependency>

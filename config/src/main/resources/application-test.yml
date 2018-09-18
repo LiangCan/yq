@@ -2,13 +2,13 @@ server:
   port: 9002
 spring:
   application:
-    name: uusmart-config
+    name: config
   cloud:
     config:
       label: master
       server:
         git:
-          uri: https://github.com/LiangCan/UUSmart
+          uri: https://github.com/LiangCan/YunQiao
 eureka:
   client:
     serviceUrl:

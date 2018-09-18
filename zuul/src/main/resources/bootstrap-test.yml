@@ -1,0 +1,27 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://dev.honfan.com.cn:9001/eureka/
+
+management:
+  security:
+    enabled: false
+spring:
+  application:
+    name: zuul
+  cloud:
+   config:
+    label: master
+    profile: prd
+    name: data-source,zuul
+    discovery:
+      enabled:  true
+      serviceId: config
+
+server:
+  port: 9003
+  tomcat:
+    accept-count: 1000
+    max-threads: 1500
+    max-connections: 2000
+

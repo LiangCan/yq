@@ -1,0 +1,48 @@
+spring:
+  application:
+    name: yq-app
+  cloud:
+    config:
+      label: master
+      profile: prd
+      name: data-source,redis-config,yq-config
+      discovery:
+        enabled: true
+        serviceId: yq-config
+      fail-fast: true
+
+server:
+  port: 9102
+  tomcat:
+    accept-count: 2000
+    max-threads: 2000
+    max-connections: 2500
+spring.thymeleaf.cache: false
+feign:
+  hystrix:
+    enabled: true
+
+
+multipart:
+  enabled: true
+  max-file-size: 50mb
+  max-request-size: 50mb
+
+eureka:
+  client:
+    #是否将自己注册到eureka服务注册中心，默认为true
+    register-with-eureka: true
+    #是否从服务注册中心获取可用的服务清单，默认为true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://goodtime-iot.com:9001/eureka/
+
+#Ribbon的负载均衡策略
+ribbon.NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+ribbon.MaxAutoRetriesNextServer: 0
+hystrix.command.default.execution.isolation.strategy:  SEMAPHORE
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 60000
+
+ribbon:
+    ReadTimeout: 60000
+    ConnectTimeout: 60000
