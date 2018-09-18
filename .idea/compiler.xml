@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="config" />
+        <module name="eureka" />
+        <module name="yq-agreement" />
+        <module name="yq-app" />
+        <module name="yq-config" />
+        <module name="yq-core" />
+        <module name="yq-eureka" />
+        <module name="yq-zuul" />
+        <module name="zuul" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.8">
+      <module name="yq-agreement" target="1.8" />
+      <module name="yq-app" target="1.5" />
+      <module name="yq-config" target="1.5" />
+      <module name="yq-core" target="1.5" />
+      <module name="yq-eureka" target="1.5" />
+      <module name="yq-zuul" target="1.5" />
+      <module name="yunqiao" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

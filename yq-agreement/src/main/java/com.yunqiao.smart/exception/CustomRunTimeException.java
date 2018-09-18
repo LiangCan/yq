@@ -47,7 +47,7 @@ public class CustomRunTimeException extends RuntimeException {
         this.result = result;
     }
 
-    public CustomRunTimeException(ResultCodeEnum resultCodeEnum, String errorMsgValue,Object [] objectName) {
+    public CustomRunTimeException(ResultCodeEnum resultCodeEnum, String errorMsgValue, Object [] objectName) {
         super();
         this.errorCode = resultCodeEnum.getKey();
         this.errorMsg = ServiceUtils.messageUtils.getMessage(errorMsgValue, objectName);

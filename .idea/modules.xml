@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/yq-agreement/yq-agreement.iml" filepath="$PROJECT_DIR$/yq-agreement/yq-agreement.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yq-app/yq-app.iml" filepath="$PROJECT_DIR$/yq-app/yq-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yq-config/yq-config.iml" filepath="$PROJECT_DIR$/yq-config/yq-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yq-core/yq-core.iml" filepath="$PROJECT_DIR$/yq-core/yq-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yq-eureka/yq-eureka.iml" filepath="$PROJECT_DIR$/yq-eureka/yq-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yq-zuul/yq-zuul.iml" filepath="$PROJECT_DIR$/yq-zuul/yq-zuul.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yunqiao.iml" filepath="$PROJECT_DIR$/yunqiao.iml" />
+    </modules>
+  </component>
+</project>
